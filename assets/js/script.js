@@ -27,9 +27,8 @@ window.addEventListener('load', function(){
             this.y += this.speedy;
         }
         draw(context){
-
+            context.fillRect(this.x, this.y, this.width, this.height);
         }
-
     }
     class Enemy {
 
@@ -44,6 +43,23 @@ window.addEventListener('load', function(){
 
     }
     class Game {
-
+        constructor(width, height){
+            this.width = width;
+            this.height = height;
+            this.player = new Player(this);
+        }
+        update(){
+            this.player.update();
+        }
+        draw(context){
+            this.player.draw(context);
+        }
     }
+
+     const game = new Game(canvas.width, canvas.height);
+     //animation loop
+     function animate(){
+        game.update();
+        game.draw(ctx);
+     }
 });
