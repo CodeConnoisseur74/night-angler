@@ -1,5 +1,6 @@
 {
     "files.autoSave": "afterDelay",
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": true
+    "editor.formatOnPaste": true,
+    "liveServer.settings.fullReload": true
 }
