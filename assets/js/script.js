@@ -42,7 +42,7 @@ window.addEventListener('load', function () {
         }
         draw(context) {
             context.fillStyle = 'yellow';
-            fillRect(this.x, this.y, this.width, this.height);
+            context.fillRect(this.x, this.y, this.width, this.height);
         }
     }
     class Particle {
@@ -56,7 +56,7 @@ window.addEventListener('load', function () {
             this.x = 20;
             this.y = 100;
             this.speedY = 0;
-            this.maxSpeed = 5;
+            this.maxSpeed = 3;
             this.projectiles = [];
         }
         update() {

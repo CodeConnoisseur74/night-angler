@@ -2,5 +2,9 @@
     "files.autoSave": "afterDelay",
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
-    "liveServer.settings.fullReload": true
+    "liveServer.settings.fullReload": true,
+    "eslint.debug": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "eslint.useESLintClass": true
 }
