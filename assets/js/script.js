@@ -36,7 +36,7 @@ window.addEventListener('load', function () {
         }
         update() {
             this.x += this.speed;
-            if (this.x > this.game.width * 0, 8) this.markedForDeletion = true;
+            if (this.x > this.game.width * 0.8) this.markedForDeletion = true;
         }
         draw(context) {
             context.fillStyle = 'yellow';
@@ -97,13 +97,13 @@ window.addEventListener('load', function () {
             this.game = game;
             this.fontSize = 25;
             this.fontFamily = 'Helvetica';
-            this.color = 'white';
+            this.color = 'yellow';
         }
         draw(context) {
             // ammo
             context.fillStyle = this.color;
             for (let i = 0; i < this.game.ammo; i++) {
-                context.fillRect(20, 50, 3, 20);
+                context.fillRect(20 + 5  * i, 50, 3, 20);
             }
         }
     }
